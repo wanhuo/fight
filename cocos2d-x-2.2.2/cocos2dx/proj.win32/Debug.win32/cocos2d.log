@@ -1,0 +1,5 @@
+﻿  复制了 15 个文件
+CCAtlasNode.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR”规范)
+     正在创建库 F:\编程资料\程序源码\游戏源码\拳皇街霸\cocos2d-x-2.2.2\projects\fight\proj.win32\Debug.win32\libcocos2d.lib 和对象 F:\编程资料\程序源码\游戏源码\拳皇街霸\cocos2d-x-2.2.2\projects\fight\proj.win32\Debug.win32\libcocos2d.exp
+LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  cocos2d.vcxproj -> F:\编程资料\程序源码\游戏源码\拳皇街霸\cocos2d-x-2.2.2\projects\fight\proj.win32\Debug.win32\libcocos2d.dll
