@@ -161,7 +161,7 @@ public:
     
     CCSprite* sprite;
     
-    UILabel* juqingTishiLabel;
+    cocos2d::gui::UILabel* juqingTishiLabel;
     
     bool zhishi;
     
@@ -171,7 +171,7 @@ public:
     
     void updateTime(float dt);
     
-    UILabel* labelnuqi;
+    cocos2d::gui::UILabel* labelnuqi;
     
     bool canTouch;
     
@@ -191,7 +191,7 @@ public:
     
     CCSprite* jiaoshi;
     
-    UILabel* label;
+    cocos2d::gui::UILabel* label;
     
     void runSkill(int id);
     

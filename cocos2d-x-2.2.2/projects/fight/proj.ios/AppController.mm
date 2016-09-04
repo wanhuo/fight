@@ -3,6 +3,9 @@
 #import "cocos2d.h"
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "Tool.h"
+#import "AdTool.h"
+#import "DeepseaTool.h"
 
 @implementation AppController
 
@@ -50,8 +53,48 @@ static AppDelegate s_sharedApplication;
     [[UIApplication sharedApplication] setStatusBarHidden:true];
     
     cocos2d::CCApplication::sharedApplication()->run();
+    
+    [Tool initWithDefine:[ToolDefine alloc] callback:^(id result) {
+        [AdTool initWithViewController: viewController define: [AdDefine alloc]];
+    }];
+    
+    DeepseaTool::getInstance()->appController = self;
 
     return YES;
+}
+
+- (void) showTost: (NSString *)text
+{
+    CGRect screenFram = [UIScreen mainScreen].applicationFrame;
+    CGSize detailSize = [text sizeWithFont:[UIFont systemFontOfSize:15] constrainedToSize:CGSizeMake(200, MAXFLOAT) lineBreakMode:UILineBreakModeWordWrap];
+    float width = detailSize.width + 40;
+    float height = detailSize.height + 20;
+    float x = screenFram.size.width / 2 - width / 2;
+    float y = screenFram.size.height - height - 50;
+    UIView *tostView = [[UIView alloc] init];
+    tostView.frame = CGRectMake(x, y, width, height);
+    tostView.tag = TAG_TOST_VIEW;
+    tostView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    tostView.layer.cornerRadius = 5;
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.textColor = [UIColor darkGrayColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.tag = TAG_TOST_LABEL;
+    [tostView addSubview:label];
+    
+    [window addSubview:tostView];
+    
+    UILabel *tostLabel = [tostView viewWithTag:TAG_TOST_LABEL];
+    tostLabel.frame = CGRectMake(0, 0, width, height);
+    tostLabel.text = text;
+    
+    if (tostView)
+    {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [tostView removeFromSuperview];
+        });
+    }
 }
 
 

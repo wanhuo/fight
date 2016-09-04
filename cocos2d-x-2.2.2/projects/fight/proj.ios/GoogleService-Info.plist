@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>1062317372819-jcgtf8t1assce1cedv322ht62p2e6dk8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1062317372819-jcgtf8t1assce1cedv322ht62p2e6dk8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDQ7AxtE22A1OHo4zfMKMr0FNsIE45ZjDY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1062317372819</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hank4.fight.one</string>
+	<key>PROJECT_ID</key>
+	<string>fight-59863</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fight-59863.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1062317372819:ios:584b74a1bcd2847d</string>
+	<key>DATABASE_URL</key>
+	<string>https://fight-59863.firebaseio.com</string>
+</dict>
+</plist>

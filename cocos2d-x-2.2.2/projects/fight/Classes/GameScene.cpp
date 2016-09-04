@@ -356,44 +356,44 @@ void GameScene::readyGo(float dt)
 void GameScene::goReady()
 {
   
-    if (id == 2)
-    {
-        if (!KingData->getShoushen())
-        {
-            SkillObject* skill1 = SkillObject::create(0);
-            skill1->setPositionY(hero->getPositionY() - hero->bottomH);
-            skill1->setPositionX(hero->getPositionX() - 320 );
-            this->addChild(skill1,9999999);
-        }
-
-    }else if (id == 3)
-    {
-        if (!KingData->getJinjiDuobi()) {
-            SkillObject* skill4 = SkillObject::create(3);
-            skill4->setPositionY(hero->getPositionY() - hero->bottomH);
-            skill4->setPositionX(hero->getPositionX() + 340 );
-            this->addChild(skill4,9999999);
-        }
-
-    }else if (id == 4)
-    {
-        if (!KingData->getBazhinv())
-        {
-              SkillObject* skill2 = SkillObject::create(1);
-              skill2->setPositionY(hero->getPositionY() - hero->bottomH);
-              skill2->setPositionX(hero->getPositionX() + 320 );
-              this->addChild(skill2,9999999);
-        }
-      
-        if (!KingData->getBajiubei())
-        {
-            SkillObject* skill3 = SkillObject::create(2);
-            skill3->setPositionY(hero->getPositionY() - hero->bottomH);
-            skill3->setPositionX(hero->getPositionX() - 340 );
-            this->addChild(skill3,9999999);
-        }
-
-    }
+//    if (id == 2)
+//    {
+//        if (!KingData->getShoushen())
+//        {
+//            SkillObject* skill1 = SkillObject::create(0);
+//            skill1->setPositionY(hero->getPositionY() - hero->bottomH);
+//            skill1->setPositionX(hero->getPositionX() - 320 );
+//            this->addChild(skill1,9999999);
+//        }
+//
+//    }else if (id == 3)
+//    {
+//        if (!KingData->getJinjiDuobi()) {
+//            SkillObject* skill4 = SkillObject::create(3);
+//            skill4->setPositionY(hero->getPositionY() - hero->bottomH);
+//            skill4->setPositionX(hero->getPositionX() + 340 );
+//            this->addChild(skill4,9999999);
+//        }
+//
+//    }else if (id == 4)
+//    {
+//        if (!KingData->getBazhinv())
+//        {
+//              SkillObject* skill2 = SkillObject::create(1);
+//              skill2->setPositionY(hero->getPositionY() - hero->bottomH);
+//              skill2->setPositionX(hero->getPositionX() + 320 );
+//              this->addChild(skill2,9999999);
+//        }
+//      
+//        if (!KingData->getBajiubei())
+//        {
+//            SkillObject* skill3 = SkillObject::create(2);
+//            skill3->setPositionY(hero->getPositionY() - hero->bottomH);
+//            skill3->setPositionX(hero->getPositionX() - 340 );
+//            this->addChild(skill3,9999999);
+//        }
+//
+//    }
     
     r->removeFromParentAndCleanup(true);
     e->removeFromParentAndCleanup(true);
@@ -1720,13 +1720,13 @@ void GameScene::shop2()
     {
         return;
     }
-    PersonalAudioEngine::sharedEngine()->pauseBackgroundMusic();
-    PersonalAudioEngine::sharedEngine()->playEffect("music/confirm.wav");
-    CCRenderTexture* renderTexture = CCRenderTexture::create(SIZE.width, SIZE.height);
-    renderTexture->begin();
-    gameLayer->visit();
-    renderTexture->end();
-    CCDirector::sharedDirector()->pushScene( ShopBuy2::scene(renderTexture,false));
+//    PersonalAudioEngine::sharedEngine()->pauseBackgroundMusic();
+//    PersonalAudioEngine::sharedEngine()->playEffect("music/confirm.wav");
+//    CCRenderTexture* renderTexture = CCRenderTexture::create(SIZE.width, SIZE.height);
+//    renderTexture->begin();
+//    gameLayer->visit();
+//    renderTexture->end();
+//    CCDirector::sharedDirector()->pushScene( ShopBuy2::scene(renderTexture,false));
 }
 
 void GameScene::jihuo()

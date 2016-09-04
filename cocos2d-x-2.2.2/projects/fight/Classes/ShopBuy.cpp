@@ -16,6 +16,7 @@
 #include "PlayerHeadUI.h"
 #include "PersonalAudioEngine.h"
 #include "FourJihuo.h"
+#include "DeepseaTool.h"
 
 static std::string nenglidescTitle[4] = {
 										"°ËÖÉÅ®",
@@ -177,6 +178,7 @@ void ShopBuy::ShopInit()
     CCMenuItem* nengli = CCMenuItemImage::create( "shop/scnl_nl_down.png","shop/scnl_nl.png", "shop/scnl_nl.png",this, menu_selector(ShopBuy::qiehuanCallback));
     CCMenuItem* xuetong = CCMenuItemImage::create( "shop/scnl_xt_down.png","shop/scnl_xt.png","shop/scnl_xt.png", this, menu_selector(ShopBuy::qiehuanCallback));
     CCMenuItem* shangcheng = CCMenuItemImage::create( "shop/scnl_sc_down.png", "shop/scnl_sc.png","shop/scnl_sc.png", this, menu_selector(ShopBuy::qiehuanCallback));
+    shangcheng->setVisible(false);
     nengli->setEnabled(false);
     menus = CCArray::create();
     menus->retain();
@@ -670,6 +672,7 @@ void ShopBuy::addCallback(CCObject* pSender)
         {
             qiehuanCallback(2);   ///////////////
             showInfo(1);
+            DeepseaTool::getInstance()->showMoneyErrorTost();
         }else
         {
             KingData->alterMoney(-200*(level+1));
@@ -815,134 +818,99 @@ void ShopBuy::addCallback(CCObject* pSender)
 
 void ShopBuy::showInfo(int id)
 {
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-    JniMethodInfo methodInfo;
-    jobject jobj;
-    bool isHave = JniHelper::getStaticMethodInfo(methodInfo, ANDROID_CLASS_NAME1,
-                                                 ANDROID_FUNCTION_NAME1,
-                                                 "(I)V");
-    if (isHave)
-    {
-        methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID, id);
-        
-    }else
-    {
-        
-    }
-#else
-
-
-#endif
-
-}
-
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-extern "C"
-{
-void  Java_com_game_fight_fight_backAction(JNIEnv *env, jobject thiz,jint aaaa)
-{
-
     if (CCDirector::sharedDirector()->getRunningScene()->getChildByTag(10001))
     {
         CCDirector::sharedDirector()->getRunningScene()->removeChildByTag(10001);
     }
-	
+    
     if (HUB!=NULL)
     {
         HUB->setVisible(true);
         gameLayer->setVisible(true);
     }
     
-    int aaa = (int)aaaa;
-	
+    int aaa = id;
     if (aaa == 8)
     {
-    	
-       
-        
-        
         KingData->setBazhinv(true);
         CCUserDefault::sharedUserDefault()->setBoolForKey("bazhinv",true);
         
         CCUserDefault::sharedUserDefault()->flush();
         CCUserDefault::sharedUserDefault()->purgeSharedUserDefault();
-		
+        
         if (HUB!=NULL)
         {
-			/*
+            /*
              CCProgressTimer* timer1 = dynamic_cast<CCProgressTimer*>(HUB->getChildByTag(skill2TimerTag));
              timer1->setPercentage(100);
-			 */
-             HUB->runSkill(2);
+             */
+            HUB->runSkill(2);
         }
-         if (CCDirector::sharedDirector()->isPaused()) {
-			
+        if (CCDirector::sharedDirector()->isPaused()) {
+            
             CCDirector::sharedDirector()->resume();
         }
-        CCLog("Java_com_game_fight_fight_backAction-bazhinv HUB=%d",HUB);
         
     }else if(aaa == 9)
     {
-    	
-    	
-
         
-      	
+        
+        
+        
+        
         KingData->setBajiubei(true);
         CCUserDefault::sharedUserDefault()->setBoolForKey("bajiubei",true);
         CCUserDefault::sharedUserDefault()->flush();
         CCUserDefault::sharedUserDefault()->purgeSharedUserDefault();
-		
+        
         if (HUB!=NULL)
         {
-			/*
-            CCProgressTimer* timer1 = dynamic_cast<CCProgressTimer*>(HUB->getChildByTag(skill3TimerTag));
-            timer1->setPercentage(100);
-			*/
+            /*
+             CCProgressTimer* timer1 = dynamic_cast<CCProgressTimer*>(HUB->getChildByTag(skill3TimerTag));
+             timer1->setPercentage(100);
+             */
             HUB->runSkill(3);
         }
-              if (CCDirector::sharedDirector()->isPaused()) {
+        if (CCDirector::sharedDirector()->isPaused()) {
             CCDirector::sharedDirector()->resume();
         }
-         CCLog("Java_com_game_fight_fight_backAction-bajiubei HUB=%d",HUB);
     }
-	else if(aaa == 23)
+    else if(aaa == 23)
     {
-    	
-    	
-       
+        
+        
+        
         
         
         KingData->setJinjiDuobi(true);
         CCUserDefault::sharedUserDefault()->setBoolForKey("jinjiduobi",true);
         CCUserDefault::sharedUserDefault()->flush();
         CCUserDefault::sharedUserDefault()->purgeSharedUserDefault();
-		
+        
         if (HUB!=NULL)
         {
-			/*
-            CCProgressTimer* timer1 = dynamic_cast<CCProgressTimer*>(HUB->getChildByTag(skill4TimerTag));
-            timer1->setPercentage(100);
-			*/
+            /*
+             CCProgressTimer* timer1 = dynamic_cast<CCProgressTimer*>(HUB->getChildByTag(skill4TimerTag));
+             timer1->setPercentage(100);
+             */
             HUB->runSkill(4);
         }
         if (CCDirector::sharedDirector()->isPaused()) {
             CCDirector::sharedDirector()->resume();
         }
-         CCLog("Java_com_game_fight_fight_backAction-jinjiduobi HUB=%d",HUB);
     }else if(aaa == 24)
     {
-   
-    
+        
+        
         KingData->setShoushen(true);
         CCUserDefault::sharedUserDefault()->setBoolForKey("shoushen",true);
         CCUserDefault::sharedUserDefault()->flush();
         CCUserDefault::sharedUserDefault()->purgeSharedUserDefault();
         if (Role!=NULL)
         {
-           Role->fuhuo();
+            Role->fuhuo();
         }
-       
+        
     }
     else if(aaa == 25)
     {
@@ -979,46 +947,41 @@ void  Java_com_game_fight_fight_backAction(JNIEnv *env, jobject thiz,jint aaaa)
     {
         if (Role != NULL)
         {
-                if (Role->isDie)
-                {
-                     Game::instance()->getShopLayer()->ispop = true;
-                }else
-                {
-                     KingData->setFuhuo(true);
-                }
+            if (Role->isDie)
+            {
+                Game::instance()->getShopLayer()->ispop = true;
+            }else
+            {
+                KingData->setFuhuo(true);
+            }
         }else
         {
             KingData->setFuhuo(true);
         }
     }else if(aaa == 11)
     {
-
+        
     }else if(aaa == 19)
     {
         if (Role != NULL)
         {
             Game::instance()->getFourJihuo()->ispop = true;
-       
+            
         }
     }
     else if(aaa == 15)
     {
-            KingData->setExtraNuqi(KingData->getExtraNuqi()+3500);
+        KingData->setExtraNuqi(KingData->getExtraNuqi()+3500);
     }
     else if(aaa == 31)
     {
-          KingData->alterMoney(26664);
+        KingData->alterMoney(26664);
     }
     else if(aaa == 32)
     {
         KingData->alterMoney(26664);
     }
-
-
-    
 }
-}
-#endif
 
 void ShopBuy::resume(CCObject* pSender)
 {
@@ -1053,7 +1016,6 @@ void ShopBuy::resume(CCObject* pSender)
 
 void ShopBuy::nengliCallback(CCObject* pSender)
 {
-   
     if (currToshoW == 3)
     {
         return;
@@ -1083,8 +1045,9 @@ void ShopBuy::nengliCallback(CCObject* pSender)
 
 void ShopBuy::qiehuanCallback(int index)
 {
-    CCObject* p = menus->objectAtIndex(2);
-    qiehuanCallback(p);
+    DeepseaTool::getInstance()->showMoneyErrorTost();
+//    CCObject* p = menus->objectAtIndex(2);
+//    qiehuanCallback(p);
 }
 
 void ShopBuy::qiehuanCallback(CCObject* pSender)
@@ -1216,9 +1179,18 @@ void ShopBuy::huodenengli(CCObject* pSender)
             if (isGet)
             {
                 
-            }else
+            }
+            else
             {
-                showInfo(8);
+                if (KingData->getMoney() < 10000)
+                {
+                    DeepseaTool::getInstance()->showMoneyErrorTost();
+                }
+                else
+                {
+                    KingData->alterMoney(-10000);
+                    showInfo(8);
+                }
             }
             break;
         }
@@ -1230,7 +1202,15 @@ void ShopBuy::huodenengli(CCObject* pSender)
                 
             }else
             {
-                showInfo(9);
+                if (KingData->getMoney() < 10000)
+                {
+                    DeepseaTool::getInstance()->showMoneyErrorTost();
+                }
+                else
+                {
+                    KingData->alterMoney(-10000);
+                    showInfo(9);
+                }
             }
             break;
         }
@@ -1239,11 +1219,20 @@ void ShopBuy::huodenengli(CCObject* pSender)
             bool isGet = KingData->getFuhuo();
             if (isGet)
             {
+                DeepseaTool::getInstance()->showMoneyErrorTost();
                 showInfo(17);
-               
-            }else
+            }
+            else
             {
-                showInfo(10);
+                if (KingData->getMoney() < 3000)
+                {
+                    DeepseaTool::getInstance()->showMoneyErrorTost();
+                }
+                else
+                {
+                    KingData->alterMoney(-3000);
+                    showInfo(10);
+                }
             }
             break;
         }
@@ -1256,6 +1245,7 @@ void ShopBuy::huodenengli(CCObject* pSender)
                 showInfo(11);
             }else
             {
+                DeepseaTool::getInstance()->showMoneyErrorTost();
                 qiehuanCallback(2);   ///////////////
                 showInfo(1);
             }

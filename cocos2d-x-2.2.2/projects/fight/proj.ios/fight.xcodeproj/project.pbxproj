@@ -221,6 +221,8 @@
 		379BB9D317F03F3700829B88 /* GUIReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99117F03F3700829B88 /* GUIReader.cpp */; };
 		379BB9D417F03F3700829B88 /* SceneReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99317F03F3700829B88 /* SceneReader.cpp */; };
 		46513EB1187BFBA200B5ABE1 /* UITouchGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46513EAF187BFBA200B5ABE1 /* UITouchGroup.cpp */; };
+		4E5ED296407F9508ED10539C /* libPods-fight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A471F8BCEF9BC49AD5D14F9 /* libPods-fight.a */; };
+		7F43BC2E1D7BC63000221649 /* DeepseaTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F43BC2D1D7BC63000221649 /* DeepseaTool.mm */; };
 		7F5215561D76EAD70048EA62 /* AboutScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F5214C21D76EAD70048EA62 /* AboutScene.cpp */; };
 		7F5215571D76EAD70048EA62 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F5214C41D76EAD70048EA62 /* AppDelegate.cpp */; };
 		7F5215581D76EAD70048EA62 /* ARPG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F5214C71D76EAD70048EA62 /* ARPG.cpp */; };
@@ -319,6 +321,15 @@
 		7F521C041D76EED70048EA62 /* wenzi in Resources */ = {isa = PBXBuildFile; fileRef = 7F521BEA1D76EED70048EA62 /* wenzi */; };
 		7F521C051D76EED70048EA62 /* xuanze in Resources */ = {isa = PBXBuildFile; fileRef = 7F521BEB1D76EED70048EA62 /* xuanze */; };
 		7F521C071D76EF8C0048EA62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F521C061D76EF8C0048EA62 /* Images.xcassets */; };
+		7FC4F3C61D786C5A00C9073B /* AdmobTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3B71D786C5A00C9073B /* AdmobTool.m */; };
+		7FC4F3C71D786C5A00C9073B /* AdTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3BA1D786C5A00C9073B /* AdTool.mm */; };
+		7FC4F3C81D786C5A00C9073B /* UnityAdsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3BC1D786C5A00C9073B /* UnityAdsTool.m */; };
+		7FC4F3C91D786C5A00C9073B /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3BF1D786C5A00C9073B /* KeychainItemWrapper.m */; };
+		7FC4F3CA1D786C5A00C9073B /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3C21D786C5A00C9073B /* Config.m */; };
+		7FC4F3CB1D786C5A00C9073B /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3C41D786C5A00C9073B /* Tool.m */; };
+		7FC4F3CE1D786D3500C9073B /* AdDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3CC1D786D3500C9073B /* AdDefine.m */; };
+		7FC4F3CF1D786D3500C9073B /* ToolDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3CD1D786D3500C9073B /* ToolDefine.m */; };
+		7FC4F3D51D787CF900C9073B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4F3D41D787CF900C9073B /* GoogleService-Info.plist */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -346,6 +357,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EF8313F5B81E1C59B6B7763 /* Pods-fight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fight.release.xcconfig"; path = "Pods/Target Support Files/Pods-fight/Pods-fight.release.xcconfig"; sourceTree = "<group>"; };
 		15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2dx.xcodeproj; path = ../../../cocos2dx/proj.ios/cocos2dx.xcodeproj; sourceTree = "<group>"; };
 		15A3D8891682F7D5002FB0C5 /* Box2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2D.h; sourceTree = "<group>"; };
 		15A3D88B1682F7D5002FB0C5 /* b2BroadPhase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2BroadPhase.cpp; sourceTree = "<group>"; };
@@ -794,6 +806,8 @@
 		379BB99417F03F3700829B88 /* SceneReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneReader.h; sourceTree = "<group>"; };
 		46513EAF187BFBA200B5ABE1 /* UITouchGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UITouchGroup.cpp; sourceTree = "<group>"; };
 		46513EB0187BFBA200B5ABE1 /* UITouchGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITouchGroup.h; sourceTree = "<group>"; };
+		6A471F8BCEF9BC49AD5D14F9 /* libPods-fight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F43BC2D1D7BC63000221649 /* DeepseaTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DeepseaTool.mm; sourceTree = "<group>"; };
 		7F5214C21D76EAD70048EA62 /* AboutScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AboutScene.cpp; path = ../Classes/AboutScene.cpp; sourceTree = "<group>"; };
 		7F5214C31D76EAD70048EA62 /* AboutScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutScene.h; path = ../Classes/AboutScene.h; sourceTree = "<group>"; };
 		7F5214C41D76EAD70048EA62 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
@@ -968,6 +982,25 @@
 		7F521BEA1D76EED70048EA62 /* wenzi */ = {isa = PBXFileReference; lastKnownFileType = folder; name = wenzi; path = ../../Resources/wenzi; sourceTree = "<group>"; };
 		7F521BEB1D76EED70048EA62 /* xuanze */ = {isa = PBXFileReference; lastKnownFileType = folder; name = xuanze; path = ../../Resources/xuanze; sourceTree = "<group>"; };
 		7F521C061D76EF8C0048EA62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = fight/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		7FC4F3B51D786C5A00C9073B /* AdDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdDefine.h; sourceTree = "<group>"; };
+		7FC4F3B61D786C5A00C9073B /* AdmobTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdmobTool.h; sourceTree = "<group>"; };
+		7FC4F3B71D786C5A00C9073B /* AdmobTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdmobTool.m; sourceTree = "<group>"; };
+		7FC4F3B81D786C5A00C9073B /* AdProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdProtocol.h; sourceTree = "<group>"; };
+		7FC4F3B91D786C5A00C9073B /* AdTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdTool.h; sourceTree = "<group>"; };
+		7FC4F3BA1D786C5A00C9073B /* AdTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AdTool.mm; sourceTree = "<group>"; };
+		7FC4F3BB1D786C5A00C9073B /* UnityAdsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityAdsTool.h; sourceTree = "<group>"; };
+		7FC4F3BC1D786C5A00C9073B /* UnityAdsTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnityAdsTool.m; sourceTree = "<group>"; };
+		7FC4F3BE1D786C5A00C9073B /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		7FC4F3BF1D786C5A00C9073B /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		7FC4F3C11D786C5A00C9073B /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		7FC4F3C21D786C5A00C9073B /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		7FC4F3C31D786C5A00C9073B /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		7FC4F3C41D786C5A00C9073B /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		7FC4F3C51D786C5A00C9073B /* ToolDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolDefine.h; sourceTree = "<group>"; };
+		7FC4F3CC1D786D3500C9073B /* AdDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdDefine.m; sourceTree = "<group>"; };
+		7FC4F3CD1D786D3500C9073B /* ToolDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolDefine.m; sourceTree = "<group>"; };
+		7FC4F3D41D787CF900C9073B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7FC4F3D81D7880B900C9073B /* DeepseaTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepseaTool.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -976,6 +1009,7 @@
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D4F9F37B12E54555005CA6D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		ECBAAE1A9BF899D009C94897 /* Pods-fight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fight/Pods-fight.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -996,6 +1030,7 @@
 				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
 				D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */,
 				1AB8703C175E0A92005D39BF /* libwebsockets.a in Frameworks */,
+				4E5ED296407F9508ED10539C /* libPods-fight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1005,9 +1040,11 @@
 		080E96DDFE201D6D7F000001 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				7FC4F3B31D786C5A00C9073B /* DeepseaTool */,
 				1AC3624216D4A1E8000847F2 /* AppController.h */,
 				1AC3624316D4A1E8000847F2 /* AppController.mm */,
 				D4F9F37B12E54555005CA6D2 /* Info.plist */,
+				7FC4F3D41D787CF900C9073B /* GoogleService-Info.plist */,
 				1AC3624516D4A1E8000847F2 /* main.m */,
 				1AC3624616D4A1E8000847F2 /* Prefix.pch */,
 				1AFCDA8016D4A25900906EA6 /* RootViewController.h */,
@@ -1735,6 +1772,7 @@
 				1AB87036175E0A92005D39BF /* libwebsockets */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				7F5218B81D76EEA30048EA62 /* Resources */,
+				3E9DE417EBA1504CEEEEB629 /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -1753,6 +1791,7 @@
 				BF170DB012928DE900B8313A /* OpenGLES.framework */,
 				BF1C47EA1293683800B63C5D /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				6A471F8BCEF9BC49AD5D14F9 /* libPods-fight.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2066,6 +2105,15 @@
 			path = CocoStudio;
 			sourceTree = "<group>";
 		};
+		3E9DE417EBA1504CEEEEB629 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECBAAE1A9BF899D009C94897 /* Pods-fight.debug.xcconfig */,
+				0EF8313F5B81E1C59B6B7763 /* Pods-fight.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7F5215361D76EAD70048EA62 /* tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -2135,6 +2183,64 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		7FC4F3B31D786C5A00C9073B /* DeepseaTool */ = {
+			isa = PBXGroup;
+			children = (
+				7FC4F3B41D786C5A00C9073B /* ad */,
+				7FC4F3BD1D786C5A00C9073B /* KeychainItemWrapper */,
+				7FC4F3C01D786C5A00C9073B /* tool */,
+				7FC4F3D61D78807900C9073B /* ios */,
+				7FC4F3CC1D786D3500C9073B /* AdDefine.m */,
+				7FC4F3CD1D786D3500C9073B /* ToolDefine.m */,
+			);
+			path = DeepseaTool;
+			sourceTree = SOURCE_ROOT;
+		};
+		7FC4F3B41D786C5A00C9073B /* ad */ = {
+			isa = PBXGroup;
+			children = (
+				7FC4F3B51D786C5A00C9073B /* AdDefine.h */,
+				7FC4F3B81D786C5A00C9073B /* AdProtocol.h */,
+				7FC4F3B91D786C5A00C9073B /* AdTool.h */,
+				7FC4F3BA1D786C5A00C9073B /* AdTool.mm */,
+				7FC4F3B61D786C5A00C9073B /* AdmobTool.h */,
+				7FC4F3B71D786C5A00C9073B /* AdmobTool.m */,
+				7FC4F3BB1D786C5A00C9073B /* UnityAdsTool.h */,
+				7FC4F3BC1D786C5A00C9073B /* UnityAdsTool.m */,
+			);
+			path = ad;
+			sourceTree = "<group>";
+		};
+		7FC4F3BD1D786C5A00C9073B /* KeychainItemWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				7FC4F3BE1D786C5A00C9073B /* KeychainItemWrapper.h */,
+				7FC4F3BF1D786C5A00C9073B /* KeychainItemWrapper.m */,
+			);
+			path = KeychainItemWrapper;
+			sourceTree = "<group>";
+		};
+		7FC4F3C01D786C5A00C9073B /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				7FC4F3C11D786C5A00C9073B /* Config.h */,
+				7FC4F3C21D786C5A00C9073B /* Config.m */,
+				7FC4F3C31D786C5A00C9073B /* Tool.h */,
+				7FC4F3C41D786C5A00C9073B /* Tool.m */,
+				7FC4F3C51D786C5A00C9073B /* ToolDefine.h */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		7FC4F3D61D78807900C9073B /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				7FC4F3D81D7880B900C9073B /* DeepseaTool.h */,
+				7F43BC2D1D7BC63000221649 /* DeepseaTool.mm */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2142,9 +2248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "fight" */;
 			buildPhases = (
+				22FD6D3AD381273E906739B6 /* [CP] Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				5A15B57E1BBCC08985597A2F /* [CP] Embed Pods Frameworks */,
+				9F216C14ED9A60172D7C7607 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2163,6 +2272,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 5Z7UYH9583;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "fight" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2208,6 +2322,7 @@
 				7F521C031D76EED70048EA62 /* util in Resources */,
 				7F521BF21D76EED70048EA62 /* help11.png in Resources */,
 				7F521BEF1D76EED70048EA62 /* duihuakuang in Resources */,
+				7FC4F3D51D787CF900C9073B /* GoogleService-Info.plist in Resources */,
 				7F521BFA1D76EED70048EA62 /* pause in Resources */,
 				7F521C001D76EED70048EA62 /* shopsc in Resources */,
 				7F521BF71D76EED70048EA62 /* menu in Resources */,
@@ -2237,6 +2352,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22FD6D3AD381273E906739B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A15B57E1BBCC08985597A2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fight/Pods-fight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F216C14ED9A60172D7C7607 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fight/Pods-fight-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -2248,12 +2411,14 @@
 				15A3D9021682F7D5002FB0C5 /* b2CollidePolygon.cpp in Sources */,
 				15A3D9031682F7D5002FB0C5 /* b2Collision.cpp in Sources */,
 				15A3D9041682F7D5002FB0C5 /* b2Distance.cpp in Sources */,
+				7FC4F3C71D786C5A00C9073B /* AdTool.mm in Sources */,
 				7F5215931D76EAD70048EA62 /* JavaTransUtil.cpp in Sources */,
 				7F5215951D76EAD70048EA62 /* Screen.cpp in Sources */,
 				15A3D9051682F7D5002FB0C5 /* b2DynamicTree.cpp in Sources */,
 				15A3D9061682F7D5002FB0C5 /* b2TimeOfImpact.cpp in Sources */,
 				15A3D9071682F7D5002FB0C5 /* b2ChainShape.cpp in Sources */,
 				15A3D9081682F7D5002FB0C5 /* b2CircleShape.cpp in Sources */,
+				7F43BC2E1D7BC63000221649 /* DeepseaTool.mm in Sources */,
 				15A3D9091682F7D5002FB0C5 /* b2EdgeShape.cpp in Sources */,
 				15A3D90A1682F7D5002FB0C5 /* b2PolygonShape.cpp in Sources */,
 				15A3D90B1682F7D5002FB0C5 /* b2BlockAllocator.cpp in Sources */,
@@ -2347,6 +2512,7 @@
 				7F5215661D76EAD70048EA62 /* Game.cpp in Sources */,
 				15A3DA321682F826002FB0C5 /* CCBFileLoader.cpp in Sources */,
 				15A3DA331682F826002FB0C5 /* CCBKeyframe.cpp in Sources */,
+				7FC4F3CE1D786D3500C9073B /* AdDefine.m in Sources */,
 				15A3DA341682F826002FB0C5 /* CCBReader.cpp in Sources */,
 				7F5215751D76EAD70048EA62 /* MenuLayer.cpp in Sources */,
 				15A3DA351682F826002FB0C5 /* CCBSequence.cpp in Sources */,
@@ -2384,6 +2550,7 @@
 				7F52159A1D76EAD70048EA62 /* UI_Layer.cpp in Sources */,
 				7F52156F1D76EAD70048EA62 /* HubLayer.cpp in Sources */,
 				15A3DA4B1682F826002FB0C5 /* CCControlColourPicker.cpp in Sources */,
+				7FC4F3CB1D786C5A00C9073B /* Tool.m in Sources */,
 				15A3DA4C1682F826002FB0C5 /* CCControlHuePicker.cpp in Sources */,
 				375BD50F1868454E0024609E /* CCActionFrame.cpp in Sources */,
 				15A3DA4D1682F826002FB0C5 /* CCControlPotentiometer.cpp in Sources */,
@@ -2403,6 +2570,7 @@
 				15A3DA551682F826002FB0C5 /* CCEditBox.cpp in Sources */,
 				7F52157B1D76EAD70048EA62 /* PersonalAudioEngine.cpp in Sources */,
 				7F52157A1D76EAD70048EA62 /* NpcHelp.cpp in Sources */,
+				7FC4F3CF1D786D3500C9073B /* ToolDefine.m in Sources */,
 				15A3DA571682F826002FB0C5 /* CCEditBoxImplIOS.mm in Sources */,
 				15A3DA591682F826002FB0C5 /* CCScrollView.cpp in Sources */,
 				15A3DA5A1682F826002FB0C5 /* CCSorting.cpp in Sources */,
@@ -2428,6 +2596,8 @@
 				1A8F3B6F175E05DA00049216 /* AnimationState.cpp in Sources */,
 				1A8F3B70175E05DA00049216 /* AnimationStateData.cpp in Sources */,
 				1A8F3B71175E05DA00049216 /* Atlas.cpp in Sources */,
+				7FC4F3C81D786C5A00C9073B /* UnityAdsTool.m in Sources */,
+				7FC4F3C91D786C5A00C9073B /* KeychainItemWrapper.m in Sources */,
 				1A8F3B72175E05DA00049216 /* AtlasAttachmentLoader.cpp in Sources */,
 				1A8F3B73175E05DA00049216 /* Attachment.cpp in Sources */,
 				1A8F3B74175E05DA00049216 /* AttachmentLoader.cpp in Sources */,
@@ -2461,6 +2631,7 @@
 				379BB99C17F03F3700829B88 /* CCTween.cpp in Sources */,
 				379BB99D17F03F3700829B88 /* CCArmature.cpp in Sources */,
 				379BB99E17F03F3700829B88 /* CCBone.cpp in Sources */,
+				7FC4F3CA1D786C5A00C9073B /* Config.m in Sources */,
 				379BB99F17F03F3700829B88 /* CCDatas.cpp in Sources */,
 				379BB9A017F03F3700829B88 /* CCBatchNode.cpp in Sources */,
 				379BB9A117F03F3700829B88 /* CCDecorativeDisplay.cpp in Sources */,
@@ -2504,6 +2675,7 @@
 				379BB9C117F03F3700829B88 /* UICheckBox.cpp in Sources */,
 				7F5215711D76EAD70048EA62 /* Jihuo.cpp in Sources */,
 				379BB9C217F03F3700829B88 /* UIImageView.cpp in Sources */,
+				7FC4F3C61D786C5A00C9073B /* AdmobTool.m in Sources */,
 				7F52157D1D76EAD70048EA62 /* PlayerHeadUI.cpp in Sources */,
 				379BB9C317F03F3700829B88 /* UILabel.cpp in Sources */,
 				7F5215911D76EAD70048EA62 /* Handler.cpp in Sources */,
@@ -2536,8 +2708,10 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECBAAE1A9BF899D009C94897 /* Pods-fight.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -2552,6 +2726,7 @@
 					CC_TARGET_OS_IPHONE,
 					"COCOS2D_DEBUG=1",
 					CC_ENABLE_CHIPMUNK_INTEGRATION,
+					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
@@ -2567,14 +2742,24 @@
 					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios\"",
 					"\"$(SRCROOT)/../../../cocos2dx/platform/ios\"",
 					"\"$(SRCROOT)/../../../cocos2dx/platform/ios/Simulation\"",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios/libraries\"",
 					"\"$(SRCROOT)/../../../external/libwebsockets/ios/lib\"",
+					"$(inherited)",
 				);
-				OTHER_CFLAGS = "-O2";
+				OTHER_CFLAGS = (
+					"-O2",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hank4.fight.one;
 				PRODUCT_NAME = fight;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -2587,8 +2772,10 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EF8313F5B81E1C59B6B7763 /* Pods-fight.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -2601,6 +2788,7 @@
 					USE_FILE32API,
 					CC_TARGET_OS_IPHONE,
 					CC_ENABLE_CHIPMUNK_INTEGRATION,
+					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
@@ -2616,13 +2804,44 @@
 					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios\"",
 					"\"$(SRCROOT)/../../../cocos2dx/platform/ios\"",
 					"\"$(SRCROOT)/../../../cocos2dx/platform/ios/Simulation\"",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios/libraries\"",
 					"\"$(SRCROOT)/../../../external/libwebsockets/ios/lib\"",
+					"$(inherited)",
 				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/UMengAnalytics\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/UnityAds\"",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hank4.fight.one;
 				PRODUCT_NAME = fight;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

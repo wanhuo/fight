@@ -81,6 +81,8 @@ void FourJihuo::showInfo(int id)
 void FourJihuo::buy(CCObject* pSender)
 {
     showInfo(19);
+    
+    ispop = true;
 }
 
 void FourJihuo::resume(CCObject* pSender)

@@ -13,6 +13,8 @@
 #include "ShopScene.h"
 #include "MenuLayer.h"
 #include "Jihuo.h"
+#include "DeepseaTool.h"
+#include "Hero.h"
 
 
 HubShop::HubShop()
@@ -67,11 +69,13 @@ bool HubShop::init()
 
 void HubShop::onlineLibaoMenu(CCObject* pSender)
 {
-    if (this->getChildByTag(10101) == NULL) {
-        Jihuo* jihuo = Jihuo::create();
-        this->addChild(jihuo,1010);
-        jihuo->setTag(10101);
-    }
+    DeepseaTool::getInstance()->showVedioAd();
+    
+//    if (this->getChildByTag(10101) == NULL) {
+//        Jihuo* jihuo = Jihuo::create();
+//        this->addChild(jihuo,1010);
+//        jihuo->setTag(10101);
+//    }
    
 }
 
@@ -204,7 +208,25 @@ void HubShop::addButton()
 void HubShop::dalibao(CCObject* pSender)
 {
     ShopScene* shopScene = dynamic_cast<ShopScene*>(this->getParent());
-    shopScene->dalibao();
+//    shopScene->dalibao();
+    
+    if (shopScene->goumaiweizhi == 1)
+    {
+        DeepseaTool::getInstance()->showVedioAd();
+    }
+    else if (shopScene->goumaiweizhi == 0)
+    {
+        PersonalAudioEngine::sharedEngine()->playEffect("music/confirm.wav");
+        CCRenderTexture* renderTexture = CCRenderTexture::create(SIZE.width, SIZE.height);
+        renderTexture->begin();
+        this->visit();
+        renderTexture->end();
+        CCDirector::sharedDirector()->pushScene( ShopBuy::scene(renderTexture,false));
+    }
+    else
+    {
+        shopScene->dalibao();
+    }
 }
 
 

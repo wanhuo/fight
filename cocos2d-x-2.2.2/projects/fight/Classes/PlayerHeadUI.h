@@ -49,6 +49,6 @@ private:
     
     ARPG* player;
     
-    UILabel* moneyHead;
+    cocos2d::gui::UILabel* moneyHead;
 };
 #endif /* defined(__King__PlayerHeadUI__) */

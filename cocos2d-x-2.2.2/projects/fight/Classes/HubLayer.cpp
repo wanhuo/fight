@@ -12,6 +12,7 @@
 #include "Flower.h"
 #include "GameData.h"
 #include "ShopBuy.h"
+#include "DeepseaTool.h"
 
 HubLayer::HubLayer()
 {
@@ -23,12 +24,12 @@ HubLayer::HubLayer()
 
 void HubLayer::onlineLibaoMenu(CCObject* pSender)
 {
-    
-    if (this->getChildByTag(10101) == NULL) {
-        Jihuo* jihuo = Jihuo::create();
-        this->addChild(jihuo,1010);
-        jihuo->setTag(10101);
-    }
+    DeepseaTool::getInstance()->showVedioAd();
+//    if (this->getChildByTag(10101) == NULL) {
+//        Jihuo* jihuo = Jihuo::create();
+//        this->addChild(jihuo,1010);
+//        jihuo->setTag(10101);
+//    }
 }
 
 bool HubLayer::init(){

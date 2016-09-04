@@ -17,6 +17,7 @@
 #include "LoadingLayer.h"
 #include "BeginLayer.h"
 #include "ShopScene.h"
+#include "DeepseaTool.h"
 
 int SelectScene::xuanguan = 1;
 
@@ -156,12 +157,12 @@ bool SelectScene::init()
 
 void SelectScene::onlineLibaoMenu(CCObject* pSender)
 {
- 
-     if (this->getChildByTag(10101) == NULL) {
-            Jihuo* jihuo = Jihuo::create();
-            this->addChild(jihuo,1010);
-            jihuo->setTag(10101);
-    }
+    DeepseaTool::getInstance()->showVedioAd();
+//     if (this->getChildByTag(10101) == NULL) {
+//            Jihuo* jihuo = Jihuo::create();
+//            this->addChild(jihuo,1010);
+//            jihuo->setTag(10101);
+//    }
 }
 
 void SelectScene::fudong(CCObject* pSender)

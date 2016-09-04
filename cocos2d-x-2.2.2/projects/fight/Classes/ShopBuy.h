@@ -24,11 +24,11 @@ public:
     
 public:
     int currToshoW;
-    UILabel* nengliDesc;
-    UILabel* nengliDescTitle;
-    UILabel* shopDesc;
-    UILabel* shopDescTitle;
-    UILabel* labelnuqi;
+    cocos2d::gui::UILabel* nengliDesc;
+    cocos2d::gui::UILabel* nengliDescTitle;
+    cocos2d::gui::UILabel* shopDesc;
+    cocos2d::gui::UILabel* shopDescTitle;
+    cocos2d::gui::UILabel* labelnuqi;
     static void isShowFuhuo();
     
     void ShopInit();
@@ -105,11 +105,11 @@ public:
     CCSpriteBatchNode* fangyubash;
     CCSpriteBatchNode* nuqibash;
     void showInfo(int id);
-    UILabel* current_money_nuM;
-    UILabel* shengmingMoneylabel;
-    UILabel* gongjitiaoMoneylabel;
-    UILabel* fangyutiaoMoneylabel;
-    UILabel* nuqitiaoMoneylabel;
+    cocos2d::gui::UILabel* current_money_nuM;
+    cocos2d::gui::UILabel* shengmingMoneylabel;
+    cocos2d::gui::UILabel* gongjitiaoMoneylabel;
+    cocos2d::gui::UILabel* fangyutiaoMoneylabel;
+    cocos2d::gui::UILabel* nuqitiaoMoneylabel;
     CCSprite* sprite;
     void update(float dt);
     
@@ -123,7 +123,7 @@ public:
     
     CCSprite* jiaoshi;
     
-    UILabel* label;
+    cocos2d::gui::UILabel* label;
 };
 
 #endif /* defined(__King__ShopBuy__) */

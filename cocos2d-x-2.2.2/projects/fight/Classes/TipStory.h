@@ -42,9 +42,9 @@ public:
     void addTip01(int index ,int monsterID);
     CCMenuItem* item;
     
-    UILabel* label;
-    UILabel* label1;
-    UILabel* label2;
+    cocos2d::gui::UILabel* label;
+    cocos2d::gui::UILabel* label1;
+    cocos2d::gui::UILabel* label2;
     
     CCLabelTTF* label02;
     

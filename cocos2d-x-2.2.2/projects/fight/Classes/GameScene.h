@@ -220,9 +220,9 @@ public:
     CCSprite* tip3;
     CCMenuItemSprite* item;
     CCMenu* menu;
-    UILabel* label;
-    UILabel* label1;
-    UILabel* label2;
+    cocos2d::gui::UILabel* label;
+    cocos2d::gui::UILabel* label1;
+    cocos2d::gui::UILabel* label2;
     bool tipsTouch;
     bool mapThreeJuqing;
     int juqingThreeIndex;

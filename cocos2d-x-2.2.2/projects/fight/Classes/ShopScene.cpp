@@ -121,14 +121,17 @@ void ShopScene::updatePosition(float dt)
         
         if (goumaiweizhi == 0)
         {
+            jiantou->setTexture(CCTextureCache::sharedTextureCache()->addImage("shopsc/shangcheng_shop.png"));
             jiantou->setPosition(ccpAdd( duboji->getPosition() , ccp(0,duboji->getContentSize().height*1.3 + 30)));
             
         }else if (goumaiweizhi == 1)
         {
+            jiantou->setTexture(CCTextureCache::sharedTextureCache()->addImage("shopsc/5432.png"));
             jiantou->setPosition(ccpAdd( jinbi->getPosition() , ccp(0,jinbi->getContentSize().height*1.3 + 25)));
             
         }else if (goumaiweizhi == 2)
         {
+            jiantou->setTexture(CCTextureCache::sharedTextureCache()->addImage("shopsc/jineng_shop.png"));
             jiantou->setPosition(ccpAdd( baoxiang->getPosition() , ccp(0,baoxiang->getContentSize().height*1.2 + 15)));
         }
     }

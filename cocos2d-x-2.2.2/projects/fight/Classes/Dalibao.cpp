@@ -5,7 +5,7 @@
 //  Created by mac on 14-5-18.
 //
 //
-
+#include "DeepseaTool.h"
 #include "Dalibao.h"
 #include "Define.h"
 #include "GameData.h"
@@ -188,7 +188,6 @@ void Dalibao::jinbi(CCObject* pSender)
     int tag = item->getTag();
     if (tag == 0)
     {
-        
         titleMoney = CCSprite::create("dalibao/4yuan.png");
         this->addChild(titleMoney);
         titleMoney->setPosition(ccp(SIZE.width*0.5, SIZE.height*0.665));
@@ -316,6 +315,7 @@ void Dalibao::buy2(float dt)
         {
             if (KingData->getMoney() < 10000)
             {
+                DeepseaTool::getInstance()->showMoneyErrorTost();
                 showInfo(1);
             }else
             {
@@ -324,6 +324,7 @@ void Dalibao::buy2(float dt)
                 CCUserDefault::sharedUserDefault()->setBoolForKey("jinjiduobi",true);
                 CCUserDefault::sharedUserDefault()->flush();
                 CCUserDefault::sharedUserDefault()->purgeSharedUserDefault();
+                DeepseaTool::getInstance()->showBuySuccessTost();
                 showInfo(29);
             }
             break;
@@ -332,6 +333,7 @@ void Dalibao::buy2(float dt)
         {
             if (KingData->getMoney() < 5000)
             {
+                DeepseaTool::getInstance()->showMoneyErrorTost();
                 showInfo(1);
             }else
             {
@@ -340,6 +342,7 @@ void Dalibao::buy2(float dt)
                 CCUserDefault::sharedUserDefault()->setBoolForKey("shoushen",true);
                 CCUserDefault::sharedUserDefault()->flush();
                 CCUserDefault::sharedUserDefault()->purgeSharedUserDefault();
+                DeepseaTool::getInstance()->showBuySuccessTost();
                 showInfo(30);
             }
             break;
