@@ -12,6 +12,7 @@
 #include "MenuScene.h"
 #include "GameData.h"
 #include "ShopScene.h"
+#include "DeepseaTool.h"
 USING_NS_CC;
 
 CCScene* MenuLayer::scene(CCRenderTexture* sqr)

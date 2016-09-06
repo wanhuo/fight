@@ -94,7 +94,8 @@ void HubShop::addJoy()
 
 void HubShop::pause(CCObject* pSender)
 {
-
+    DeepseaTool::getInstance()->showInterstitialAd();
+    
     CCDirector::sharedDirector()->pushScene( MenuLayer::scene(1));
 }
 

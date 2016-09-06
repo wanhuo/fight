@@ -13,6 +13,7 @@
 #include "XMLData.h"
 #include "PersonalAudioEngine.h"
 #include "LoadingLayer.h"
+#include "DeepseaTool.h"
 const std::string tupian[5] =
 {
    "xuanze/dawdaqq11.png","xuanze/xianshimoshi.png","xuanze/shaguaimoshi.png","xuanze/qianjin.png","xuanze/shengcun.png"
@@ -137,8 +138,10 @@ bool BeginLayer::init(int id)
 
 void BeginLayer::start_game(CCObject* pSender)
 {
-     PersonalAudioEngine::sharedEngine()->playEffect("music/confirm.wav");
-     CCDirector::sharedDirector()->replaceScene(LoadingLayer::scene(id, moshiID[id]));
+    DeepseaTool::getInstance()->showInterstitialAd();
+    
+    PersonalAudioEngine::sharedEngine()->playEffect("music/confirm.wav");
+    CCDirector::sharedDirector()->replaceScene(LoadingLayer::scene(id, moshiID[id]));
 }
 
 void BeginLayer::resume(CCObject* pSender)

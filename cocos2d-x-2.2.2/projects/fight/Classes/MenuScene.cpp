@@ -86,16 +86,18 @@ void MenuScene::onEnterTransitionDidFinish()
         music =  CCMenuItemToggle::createWithTarget(this, menu_selector(MenuScene::musicOn ), CCMenuItemImage::create("menu/shengyin2.png", "menu/shengyin2.png"),CCMenuItemImage::create("menu/shengyin.png", "menu/shengyin.png"),NULL);
     }
     about = CCMenuItemImage::create("menu/guanyu.png", "menu/guanyu.png", this,menu_selector(MenuScene::AboutGame));
+    about->setVisible(false);
+    moreGame->setVisible(false);
+    menu->addChild(music,2);
     menu->addChild(about,2);
     menu->addChild(moreGame,2);
-    menu->addChild(music,2);
     
     about->setPosition(ccp(-0.5*SIZE.width, SIZE.height*0.1));
     music->setPosition(ccp(-0.5*SIZE.width, SIZE.height*0.1));
     moreGame->setPosition(ccp(-0.5*SIZE.width, SIZE.height*0.1));
-    music->runAction(CCMoveBy::create(0.65f, ccp(0.8*SIZE.width, 0)));
+    music->runAction(CCMoveBy::create(0.65f, ccp(0.6*SIZE.width, 0)));
     about->runAction(CCMoveBy::create(0.77f, ccp(0.7*SIZE.width, 0)));
-    moreGame->runAction(CCMoveBy::create(0.90f, ccp(0.6*SIZE.width, 0)));
+    moreGame->runAction(CCMoveBy::create(0.90f, ccp(0.8*SIZE.width, 0)));
 }
 
 

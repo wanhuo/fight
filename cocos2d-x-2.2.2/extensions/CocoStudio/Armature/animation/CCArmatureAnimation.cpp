@@ -28,6 +28,7 @@ THE SOFTWARE.
 #include "../utils/CCArmatureDefine.h"
 #include "../utils/CCUtilMath.h"
 #include "../datas/CCDatas.h"
+#include "DeepseaTool.h"
 
 
 NS_CC_EXT_BEGIN
@@ -105,6 +106,8 @@ void CCArmatureAnimation:: pause()
 
 void CCArmatureAnimation::resume()
 {
+//    DeepseaTool::getInstance()->showInterstitialAd();
+    
     CCObject *object = NULL;
     CCARRAY_FOREACH(m_pTweenList, object)
     {

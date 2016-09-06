@@ -56,18 +56,18 @@ void DeepseaTool::showInterstitialAdFail()
 
 void DeepseaTool::showVedioAd()
 {
+    CCDirector::sharedDirector()->pause();
     [[AdTool alloc] showVedioAd];
 }
 
 void DeepseaTool::showVedioAdSuccess()
 {
+    CCDirector::sharedDirector()->resume();
     KingData->alterMoney(AD_MONEY_REWORD);
     [(AppController *)appController showTost: [NSString stringWithFormat:@"获得%d金币", AD_MONEY_REWORD]];
-//    CCUserDefault::sharedUserDefault()->flush();
-//    CCUserDefault::sharedUserDefault()->purgeSharedUserDefault();
 }
 
 void DeepseaTool::showVedioAdFail()
 {
-    
+    CCDirector::sharedDirector()->resume();
 }

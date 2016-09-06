@@ -1684,6 +1684,8 @@ void GameScene::pause(CCObject* pSender)
     {
         return;
     }
+    DeepseaTool::getInstance()->showInterstitialAd();
+    
     CCRenderTexture* renderTexture = CCRenderTexture::create(SIZE.width, SIZE.height);
     renderTexture->begin();
     gameLayer->visit();

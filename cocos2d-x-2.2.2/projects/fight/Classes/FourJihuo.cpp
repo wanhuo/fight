@@ -36,7 +36,7 @@ bool FourJihuo::init()
     this->addChild(bg);
     bg->setPosition(ccp(SIZE.width*0.5, SIZE.height*0.5));
     xiaocha = CCMenuItemImage::create("dalibao/x12.png", "dalibao/x22.png",this,menu_selector(FourJihuo::resume));
-    goumai = CCMenuItemImage::create("dalibao/anniu1.png", "dalibao/anniu2.png",this,menu_selector(FourJihuo::buy));
+    goumai = CCMenuItemImage::create("dalibao/btn_fuhuo1.png", "dalibao/btn_fuhuo2.png",this,menu_selector(FourJihuo::buy));
     CCMenu* menu = CCMenu::create();
     this->addChild(menu);
     menu->setPosition(0, 0);

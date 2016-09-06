@@ -373,6 +373,8 @@ CCScene* GameOverScene::scene(int lianji,int hpPercent,int remainTime,int guan,C
 
 void GameOverScene::menuCloseCallback(CCObject* pSender)
 {
+    DeepseaTool::getInstance()->showInterstitialAd();
+    
     if (this->guan == 101)
     {
         CCDirector::sharedDirector()->resume();

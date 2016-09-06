@@ -11,7 +11,7 @@
 #include "Game.h"
 #include "SelectScene.h"
 #include "Dalibao.h"
-
+#include "DeepseaTool.h"
 
 
 CCScene* ShopScene::scene()
@@ -86,6 +86,8 @@ bool ShopScene::init()
     HubShop* hub = HubShop::create();
     this->addChild(hub,102,102);
     this->scheduleUpdate();
+    
+//    DeepseaTool::getInstance()->showInterstitialAd();
     
     return true;
 }

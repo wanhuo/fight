@@ -40,6 +40,6 @@ public:
     void showVedioAdFail();
 };
 
-#define AD_MONEY_REWORD 10000
+#define AD_MONEY_REWORD 500
 
 #endif /* DeepseaTool_hpp */

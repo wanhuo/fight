@@ -18,6 +18,7 @@ USING_NS_CC;
 #include "TipStory.h"
 #include "cocos-ext.h"
 #include "HeroBoss.h"
+#include "DeepseaTool.h"
 
 typedef enum{
     k_Operate_Pause = 0,
