@@ -17,8 +17,6 @@ typedef void(^AfterLoadSuccess)(id result);
 
 - (void) loadConfig:(ToolDefine *)define callback:(AfterLoadSuccess) callback;
 
-- (NSInteger) getConfigVersion;
-
 - (NSArray *) getConfigAds: (NSString *) adMode;
 
 @end

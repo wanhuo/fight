@@ -16,17 +16,17 @@ typedef void(^AfterInitTool)(id result);
 
 @property (assign, nonatomic) BOOL isReplyLater;
 
-+ (void) initWithDefine: (ToolDefine *) define callback: (AfterInitTool)callback;
++ (void) initWithViewController: (UIViewController *) viewController define:(ToolDefine *)define callback:(AfterInitTool)callback;
 
 - (void) initUm;
-
-- (BOOL) isVIP;
 
 - (BOOL) isReply;
 
 - (void) share: (UIViewController *) viewController;
 
 - (void) reply;
+
+- (void) showReplyDialog;
 
 - (BOOL) isNetWorkOk;
 

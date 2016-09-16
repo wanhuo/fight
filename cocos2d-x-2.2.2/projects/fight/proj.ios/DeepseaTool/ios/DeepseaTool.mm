@@ -11,6 +11,7 @@
 #import "AppController.h"
 #import "GameData.h"
 #import "Define.h"
+#import "Tool.h"
 
 static DeepseaTool* sInstance = NULL;
 
@@ -21,6 +22,14 @@ DeepseaTool* DeepseaTool::getInstance()
         sInstance = new DeepseaTool();
     }
     return sInstance;
+}
+
+void DeepseaTool::showReply()
+{
+    if (![[Tool alloc] isReply] && ![[Tool alloc] isReplyLater])
+    {
+        [[Tool alloc] showReplyDialog];
+    }
 }
 
 void DeepseaTool::showTost(char *text)
@@ -70,4 +79,10 @@ void DeepseaTool::showVedioAdSuccess()
 void DeepseaTool::showVedioAdFail()
 {
     CCDirector::sharedDirector()->resume();
+}
+
+void DeepseaTool::replySuccess()
+{
+    KingData->alterMoney(REPLY_MONEY_REWORD);
+    [(AppController *)appController showTost: [NSString stringWithFormat:@"获得%d金币", REPLY_MONEY_REWORD]];
 }

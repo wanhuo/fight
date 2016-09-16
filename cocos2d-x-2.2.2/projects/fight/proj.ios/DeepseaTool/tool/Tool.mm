@@ -10,8 +10,12 @@
 #import "Config.h"
 #import "KeychainItemWrapper.h"
 #import "UMMobClick/MobClick.h"
+#include "ConfigStore.hpp"
+#import "DeepseaTool.h"
 
 @interface Tool()
+
+@property (nonatomic, strong) UIViewController *viewController;
 
 @property (nonatomic, strong) ToolDefine *define;
 
@@ -20,6 +24,12 @@
 @implementation Tool
 
 static Tool *instance = nil;
+
++ (void) initWithViewController: (UIViewController *) viewController define:(ToolDefine *)define callback:(AfterInitTool)callback
+{
+    [Tool initWithDefine:define callback:callback];
+    instance.viewController = viewController;
+}
 
 + (void) initWithDefine: (ToolDefine *)define callback:(AfterInitTool)callback
 {
@@ -41,27 +51,48 @@ static Tool *instance = nil;
     UMConfigInstance.channelId = [_define getChannel];
     [MobClick setLogEnabled:YES];
     [MobClick startWithConfigure:UMConfigInstance];
+    
+    [self clearKeyChin];
 }
 
-- (BOOL) isVIP
+- (BOOL)isReplyLater
 {
-    return [self isReply];
+    return ConfigStore::getInstance()->isReplyLater;
+}
+
+- (void)setIsReplyLater:(BOOL)isReplyLater
+{
+    ConfigStore::getInstance()->isReplyLater = isReplyLater;
 }
 
 - (BOOL) isReply
 {
     NSInteger appVersion = [_define getAppVersion];
-    NSInteger remoteVersion = [[Config alloc] getConfigVersion];
     
-    if (remoteVersion > 0 && appVersion < remoteVersion)
+    if (ConfigStore::getInstance()->configVersion > 0 && appVersion < ConfigStore::getInstance()->configVersion)
     {
-        KeychainItemWrapper *keyChin = [[KeychainItemWrapper alloc]initWithIdentifier:@REPLY_KWY_CHIN accessGroup:nil];
+        KeychainItemWrapper *keyChin = [[KeychainItemWrapper alloc]initWithIdentifier:[self getReplyKeyChinIdentifier] accessGroup:nil];
         return [@REPLY_KWY_CHIN isEqualToString:[keyChin objectForKey:(__bridge id)kSecValueData]];
     }
     else
     {
         return YES;
     }
+}
+
+- (void) showReplyDialog
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"立即五星评论，并带有'街霸'字样，即可获得5000G大礼包" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"马上评价" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [[Tool alloc] reply];
+    }];
+    UIAlertAction *sureAcion = [UIAlertAction actionWithTitle:@"稍后再说" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [[Tool alloc] setIsReplyLater:YES];
+    }];
+    [alertController addAction:sureAcion];
+    [alertController addAction:cancelAction];
+    
+    [_viewController presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void) reply
@@ -86,18 +117,28 @@ static Tool *instance = nil;
     
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:reviewURL]];
     
-    KeychainItemWrapper * keyChin = [[KeychainItemWrapper alloc]initWithIdentifier:@REPLY_KWY_CHIN accessGroup:nil];
+    KeychainItemWrapper * keyChin = [[KeychainItemWrapper alloc]initWithIdentifier:[self getReplyKeyChinIdentifier] accessGroup:nil];
     [keyChin setObject: @REPLY_KWY_CHIN forKey:(id)kSecAttrService];
     [keyChin setObject: @REPLY_KWY_CHIN forKey:(__bridge id)kSecAttrAccount];
     [keyChin setObject: @REPLY_KWY_CHIN forKey:(__bridge id)kSecValueData];
+    
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 3 * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void){
+        DeepseaTool::getInstance()->replySuccess();
+    });
 }
 
 - (void) clearKeyChin
 {
-    KeychainItemWrapper * keyChin = [[KeychainItemWrapper alloc]initWithIdentifier:@REPLY_KWY_CHIN accessGroup:nil];
+    KeychainItemWrapper * keyChin = [[KeychainItemWrapper alloc]initWithIdentifier:[self getReplyKeyChinIdentifier] accessGroup:nil];
     [keyChin setObject: @"1" forKey:(id)kSecAttrService];
     [keyChin setObject: @"2" forKey:(__bridge id)kSecAttrAccount];
     [keyChin setObject: @"3" forKey:(__bridge id)kSecValueData];
+}
+
+- (NSString *) getReplyKeyChinIdentifier
+{
+    return [NSString stringWithFormat:@"%@-%@-%@", @REPLY_KWY_CHIN, [_define getAppId], [_define getChannel]];
 }
 
 - (void) share: (UIViewController *) viewController

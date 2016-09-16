@@ -38,8 +38,14 @@ public:
     void showVedioAdSuccess();
     
     void showVedioAdFail();
+    
+    void showReply();
+    
+    void replySuccess();
 };
 
 #define AD_MONEY_REWORD 500
+
+#define REPLY_MONEY_REWORD 5000
 
 #endif /* DeepseaTool_hpp */

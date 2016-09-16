@@ -319,12 +319,13 @@
 		7F521C041D76EED70048EA62 /* wenzi in Resources */ = {isa = PBXBuildFile; fileRef = 7F521BEA1D76EED70048EA62 /* wenzi */; };
 		7F521C051D76EED70048EA62 /* xuanze in Resources */ = {isa = PBXBuildFile; fileRef = 7F521BEB1D76EED70048EA62 /* xuanze */; };
 		7F521C071D76EF8C0048EA62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F521C061D76EF8C0048EA62 /* Images.xcassets */; };
+		7F69BA931D8B9AFB0015C212 /* ConfigStore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F69BA911D8B9AFB0015C212 /* ConfigStore.cpp */; };
 		7FC4F3C61D786C5A00C9073B /* AdmobTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3B71D786C5A00C9073B /* AdmobTool.m */; };
 		7FC4F3C71D786C5A00C9073B /* AdTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3BA1D786C5A00C9073B /* AdTool.mm */; };
 		7FC4F3C81D786C5A00C9073B /* UnityAdsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3BC1D786C5A00C9073B /* UnityAdsTool.m */; };
 		7FC4F3C91D786C5A00C9073B /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3BF1D786C5A00C9073B /* KeychainItemWrapper.m */; };
-		7FC4F3CA1D786C5A00C9073B /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3C21D786C5A00C9073B /* Config.m */; };
-		7FC4F3CB1D786C5A00C9073B /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3C41D786C5A00C9073B /* Tool.m */; };
+		7FC4F3CA1D786C5A00C9073B /* Config.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3C21D786C5A00C9073B /* Config.mm */; };
+		7FC4F3CB1D786C5A00C9073B /* Tool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3C41D786C5A00C9073B /* Tool.mm */; };
 		7FC4F3CE1D786D3500C9073B /* AdDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3CC1D786D3500C9073B /* AdDefine.m */; };
 		7FC4F3CF1D786D3500C9073B /* ToolDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4F3CD1D786D3500C9073B /* ToolDefine.m */; };
 		7FC4F3D51D787CF900C9073B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4F3D41D787CF900C9073B /* GoogleService-Info.plist */; };
@@ -979,6 +980,8 @@
 		7F521BEA1D76EED70048EA62 /* wenzi */ = {isa = PBXFileReference; lastKnownFileType = folder; name = wenzi; path = ../../Resources/wenzi; sourceTree = "<group>"; };
 		7F521BEB1D76EED70048EA62 /* xuanze */ = {isa = PBXFileReference; lastKnownFileType = folder; name = xuanze; path = ../../Resources/xuanze; sourceTree = "<group>"; };
 		7F521C061D76EF8C0048EA62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = fight/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		7F69BA911D8B9AFB0015C212 /* ConfigStore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigStore.cpp; sourceTree = "<group>"; };
+		7F69BA921D8B9AFB0015C212 /* ConfigStore.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConfigStore.hpp; sourceTree = "<group>"; };
 		7FC4F3B51D786C5A00C9073B /* AdDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdDefine.h; sourceTree = "<group>"; };
 		7FC4F3B61D786C5A00C9073B /* AdmobTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdmobTool.h; sourceTree = "<group>"; };
 		7FC4F3B71D786C5A00C9073B /* AdmobTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdmobTool.m; sourceTree = "<group>"; };
@@ -990,9 +993,9 @@
 		7FC4F3BE1D786C5A00C9073B /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
 		7FC4F3BF1D786C5A00C9073B /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		7FC4F3C11D786C5A00C9073B /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
-		7FC4F3C21D786C5A00C9073B /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		7FC4F3C21D786C5A00C9073B /* Config.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Config.mm; sourceTree = "<group>"; };
 		7FC4F3C31D786C5A00C9073B /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
-		7FC4F3C41D786C5A00C9073B /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		7FC4F3C41D786C5A00C9073B /* Tool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Tool.mm; sourceTree = "<group>"; };
 		7FC4F3C51D786C5A00C9073B /* ToolDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolDefine.h; sourceTree = "<group>"; };
 		7FC4F3CC1D786D3500C9073B /* AdDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdDefine.m; sourceTree = "<group>"; };
 		7FC4F3CD1D786D3500C9073B /* ToolDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolDefine.m; sourceTree = "<group>"; };
@@ -2214,10 +2217,12 @@
 		7FC4F3C01D786C5A00C9073B /* tool */ = {
 			isa = PBXGroup;
 			children = (
+				7F69BA921D8B9AFB0015C212 /* ConfigStore.hpp */,
+				7F69BA911D8B9AFB0015C212 /* ConfigStore.cpp */,
 				7FC4F3C11D786C5A00C9073B /* Config.h */,
-				7FC4F3C21D786C5A00C9073B /* Config.m */,
+				7FC4F3C21D786C5A00C9073B /* Config.mm */,
 				7FC4F3C31D786C5A00C9073B /* Tool.h */,
-				7FC4F3C41D786C5A00C9073B /* Tool.m */,
+				7FC4F3C41D786C5A00C9073B /* Tool.mm */,
 				7FC4F3C51D786C5A00C9073B /* ToolDefine.h */,
 			);
 			path = tool;
@@ -2544,7 +2549,7 @@
 				7F52159A1D76EAD70048EA62 /* UI_Layer.cpp in Sources */,
 				7F52156F1D76EAD70048EA62 /* HubLayer.cpp in Sources */,
 				15A3DA4B1682F826002FB0C5 /* CCControlColourPicker.cpp in Sources */,
-				7FC4F3CB1D786C5A00C9073B /* Tool.m in Sources */,
+				7FC4F3CB1D786C5A00C9073B /* Tool.mm in Sources */,
 				15A3DA4C1682F826002FB0C5 /* CCControlHuePicker.cpp in Sources */,
 				375BD50F1868454E0024609E /* CCActionFrame.cpp in Sources */,
 				15A3DA4D1682F826002FB0C5 /* CCControlPotentiometer.cpp in Sources */,
@@ -2562,6 +2567,7 @@
 				15A3DA531682F826002FB0C5 /* CCInvocation.cpp in Sources */,
 				15A3DA541682F826002FB0C5 /* CCScale9Sprite.cpp in Sources */,
 				15A3DA551682F826002FB0C5 /* CCEditBox.cpp in Sources */,
+				7F69BA931D8B9AFB0015C212 /* ConfigStore.cpp in Sources */,
 				7F52157B1D76EAD70048EA62 /* PersonalAudioEngine.cpp in Sources */,
 				7F52157A1D76EAD70048EA62 /* NpcHelp.cpp in Sources */,
 				7FC4F3CF1D786D3500C9073B /* ToolDefine.m in Sources */,
@@ -2625,7 +2631,7 @@
 				379BB99C17F03F3700829B88 /* CCTween.cpp in Sources */,
 				379BB99D17F03F3700829B88 /* CCArmature.cpp in Sources */,
 				379BB99E17F03F3700829B88 /* CCBone.cpp in Sources */,
-				7FC4F3CA1D786C5A00C9073B /* Config.m in Sources */,
+				7FC4F3CA1D786C5A00C9073B /* Config.mm in Sources */,
 				379BB99F17F03F3700829B88 /* CCDatas.cpp in Sources */,
 				379BB9A017F03F3700829B88 /* CCBatchNode.cpp in Sources */,
 				379BB9A117F03F3700829B88 /* CCDecorativeDisplay.cpp in Sources */,

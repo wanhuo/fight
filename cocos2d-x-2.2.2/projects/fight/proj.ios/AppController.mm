@@ -55,7 +55,7 @@ static AppDelegate s_sharedApplication;
     
     cocos2d::CCApplication::sharedApplication()->run();
     
-    [Tool initWithDefine:[ToolDefine alloc] callback:^(id result) {
+    [Tool initWithViewController:viewController define:[ToolDefine alloc] callback:^(id result) {
         [AdTool initWithViewController: viewController define: [AdDefine alloc]];
     }];
     

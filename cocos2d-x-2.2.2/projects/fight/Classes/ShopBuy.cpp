@@ -327,6 +327,10 @@ void ShopBuy::ShopInit()
         nengliDescTitle->setText(I18N_STR(88));
         nengliSort = 3;
     }
+    else
+    {
+        DeepseaTool::getInstance()->showReply();
+    }
     
     /*****    Ѫͳ          *****/
     xuetogNode = CCNode::create();

@@ -8,6 +8,7 @@
 
 #import "Config.h"
 #import "AdTool.h"
+#include "ConfigStore.hpp"
 
 @interface Config()
 
@@ -58,6 +59,11 @@ static Config *instance = nil;
                 if (resDict)
                 {
                     _data = resDict;
+                    NSDictionary *configDict = [self getConfigDict];
+                    if (configDict)
+                    {
+                        ConfigStore::getInstance()->configVersion = [configDict[@"version"] integerValue];
+                    }
                 }
             }
         }
@@ -65,17 +71,6 @@ static Config *instance = nil;
     }];
     [dataTask resume];
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-}
-
-- (NSInteger)getConfigVersion
-{
-    NSInteger version = 0;
-    NSDictionary *configDict = [self getConfigDict];
-    if (configDict)
-    {
-        version = [[configDict objectForKey:@"version"] integerValue];
-    }
-    return version;
 }
 
 - (NSArray *) getConfigAds: (NSString *) adMode
