@@ -6,49 +6,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../extensions/CocoStudio/Armature/animation/CCArmatureAnimation.cpp"
-            timestampString = "494774608.343399"
+            filePath = "DeepseaTool/tool/Tool.m"
+            timestampString = "495388467.545242"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "CCArmatureAnimation::resume()"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "cocos2d::extension::CCArmatureAnimation::resume()"
-                  moduleName = "fight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/caoyusheng/game/github/fight/cocos2d-x-2.2.2/extensions/CocoStudio/Armature/animation/CCArmatureAnimation.cpp"
-                  timestampString = "494774728.165436"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "112"
-                  endingLineNumber = "112"
-                  offsetFromSymbolStart = "6">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "cocos2d::extension::CCArmatureAnimation::resume()"
-                  moduleName = "fight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/caoyusheng/game/github/fight/cocos2d-x-2.2.2/extensions/CocoStudio/Armature/animation/CCArmatureAnimation.cpp"
-                  timestampString = "494774728.165667"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "112"
-                  endingLineNumber = "112"
-                  offsetFromSymbolStart = "20">
-               </Location>
-            </Locations>
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-isReply"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DeepseaTool/tool/Config.m"
+            timestampString = "495388515.83713"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-getConfigVersion"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
