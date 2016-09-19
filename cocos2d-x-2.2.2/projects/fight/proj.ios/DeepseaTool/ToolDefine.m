@@ -14,7 +14,7 @@ static ToolDefine *instance = nil;
 
 - (NSString *)getAppId
 {
-    return @"1149976402";
+    return @APP_ID;
 }
 
 - (NSString *)getShareLogo
@@ -34,7 +34,7 @@ static ToolDefine *instance = nil;
 
 - (NSString *)getChannel
 {
-    return @"yusheng_1";
+    return @CHANNEL;
 }
 
 - (NSInteger)getAppVersion

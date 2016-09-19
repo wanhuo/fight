@@ -22,6 +22,11 @@ static AdDefine *instance = nil;
     return @"ca-app-pub-1463754682473987/4666155957";
 }
 
+- (NSString *) getAdmobVedioKey
+{
+    return @"ca-app-pub-1463754682473987/1879519551";
+}
+
 - (NSString *) getUnityGameId
 {
     return @"127514";

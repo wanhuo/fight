@@ -69,16 +69,9 @@ dispatch_queue_t dispatchSerialQueue;
 
 - (void) createInterstitial
 {
-    if (nil == dispatchSerialQueue)
-    {
-        dispatchSerialQueue = dispatch_queue_create("com.chris.game.vpn.one", DISPATCH_QUEUE_PRIORITY_DEFAULT);
-    }
-    
-    dispatch_async(dispatchSerialQueue, ^{
-        self.admobInterstitial = [[GADInterstitial alloc] initWithAdUnitID:[_define getAdmobInterstitialKey]];
-        self.admobInterstitial.delegate = self;
-        [self loadAdmobInterstitial];
-    });
+    self.admobInterstitial = [[GADInterstitial alloc] initWithAdUnitID:[_define getAdmobInterstitialKey]];
+    self.admobInterstitial.delegate = self;
+    [self loadAdmobInterstitial];
 }
 
 -(void)loadAdmobInterstitial

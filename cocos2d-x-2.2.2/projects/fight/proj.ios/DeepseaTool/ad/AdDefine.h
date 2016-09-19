@@ -14,6 +14,8 @@
 
 - (NSString *) getAdmobInterstitialKey;
 
+- (NSString *) getAdmobVedioKey;
+
 - (NSString *) getUnityGameId;
 
 @end

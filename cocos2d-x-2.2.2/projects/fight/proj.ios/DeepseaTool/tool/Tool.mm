@@ -82,7 +82,7 @@ static Tool *instance = nil;
 
 - (void) showReplyDialog
 {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"立即五星评论，并带有'街霸'字样，即可获得5000G大礼包" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"立即五星评论，并带有'拳皇'字样，即可获得5000G大礼包" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"马上评价" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [[Tool alloc] reply];
     }];
