@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>chris_1.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>fight.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>hank_1.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>yusheng_1.xcscheme</key>
 		<dict>
@@ -23,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>7F6AFDE41D900F5500AF8DD1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7FF862601DAFD416003D5BE0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7FF863BE1DAFD9C4003D5BE0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
