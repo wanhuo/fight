@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'iphone' target in the 'iphone' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+
+#define APP_ID "1203580859"
+#define CHANNEL "hongzhen_1"
